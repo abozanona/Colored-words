@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>baloon</title>
+
+<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
+
+<script src="A/A.js"></script>
+<script src="B/B.js"></script>
+<script src="C/C.js"></script>
+<script src="D/D.js"></script>
+<script src="E/E.js"></script>
+<script src="F/F.js"></script>
+<script src="G/G.js"></script>
+<script src="H/H.js"></script>
+<script src="I/I.js"></script>
+<script src="J/J.js"></script>
+<script src="K/K.js"></script>
+<script src="L/L.js"></script>
+<script src="M/M.js"></script>
+<script src="N/N.js"></script>
+<script src="O/O.js"></script>
+<script src="P/P.js"></script>
+<script src="Q/Q.js"></script>
+<script src="R/R.js"></script>
+<script src="S/S.js"></script>
+<script src="T/T.js"></script>
+<script src="U/U.js"></script>
+<script src="V/V.js"></script>
+<script src="W/W.js"></script>
+<script src="X/X.js"></script>
+<script src="Y/Y.js"></script>
+<script src="Z/Z.js"></script>
+
+<script>
+
+function init(letter,color) {
+
+	letter=letter.toUpperCase();
+
+	var canvas, stage, exportRoot;
+	canvas = document.createElement('canvas');
+	canvas.width=90;
+	canvas.height=180;
+
+	stage = new createjs.Stage(canvas);
+	{
+		if(letter=='A')
+			exportRoot = new libA.A();
+		else if(letter=='B')
+			exportRoot = new libB.B();
+		else if(letter=='C')
+			exportRoot = new libC.C();
+		else if(letter=='D')
+			exportRoot = new libD.D();
+		else if(letter=='E')
+			exportRoot = new libE.E();
+		else if(letter=='F')
+			exportRoot = new libF.F();
+		else if(letter=='G')
+			exportRoot = new libG.G();
+		else if(letter=='H')
+			exportRoot = new libH.H();
+		else if(letter=='I')
+			exportRoot = new libI.I();
+		else if(letter=='J')
+			exportRoot = new libJ.J();
+		else if(letter=='K')
+			exportRoot = new libK.K();
+		else if(letter=='L')
+			exportRoot = new libL.L();
+		else if(letter=='M')
+			exportRoot = new libM.M();
+		else if(letter=='N')
+			exportRoot = new libN.N();
+		else if(letter=='O')
+			exportRoot = new libO.O();
+		else if(letter=='P')
+			exportRoot = new libP.P();
+		else if(letter=='Q')
+			exportRoot = new libQ.Q();
+		else if(letter=='R')
+			exportRoot = new libR.R();
+		else if(letter=='S')
+			exportRoot = new libS.S();
+		else if(letter=='T')
+			exportRoot = new libT.T();
+		else if(letter=='U')
+			exportRoot = new libU.U();
+		else if(letter=='V')
+			exportRoot = new libV.V();
+		else if(letter=='W')
+			exportRoot = new libW.W();
+		else if(letter=='X')
+			exportRoot = new libX.X();
+		else if(letter=='Y')
+			exportRoot = new libY.Y();
+		else if(letter=='Z')
+			exportRoot = new libZ.Z();
+	}
+	stage.addChild(exportRoot);
+
+
+	stage.update();
+
+	createjs.Ticker.setFPS(libA.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+	return canvas;
+}
+</script>
+</head>
+
+<body>
+	<div id="aa">
+	</div>
+</body>
+<script>
+	document.getElementById('aa').appendChild(init());
+</script>
+</html>

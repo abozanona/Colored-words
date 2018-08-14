@@ -1,0 +1,331 @@
+/************************************
+special classes
+************************************/
+.cen-align{
+	text-align: center;
+}
+/*.ui-page,div[data-role=main],div[data-role=page]{
+	width: 640px !important;
+	height: 360px !important;
+	position: relative !important;
+}*/
+/************************************
+Main page
+************************************/
+.btnimg{
+	display: block;
+	margin:1px;
+}
+.btnsholder{
+	position:absolute;
+	right:0px;
+	bottom:0px
+}
+#baloon1{
+	position: absolute;
+	left:42px;
+	top:191px;
+}
+/************************************
+floating buttons
+************************************/
+.goBcak,.nextDifficulty,.prevDifficulty,.exitGame{
+	/*position: absolute;*/
+	position: fixed;
+    z-index: 1000;
+}
+.goBcak{
+	left:6px;
+	top:6px;
+}
+.score{
+    left: 41px;
+    top: 12px;
+    position: absolute;
+    z-index: 2;
+}
+.nextDifficulty{
+	right:6px;
+	bottom:6px;
+}
+.prevDifficulty{
+	left:6px;
+	bottom:6px;
+}
+.exitGame{
+	top:6px;
+	right:6px;
+}
+/************************************
+Levels page
+************************************/
+.levelBlock{
+	height:152px;
+	text-align: center;
+}
+.levelBlock>div{
+	width:121px;
+	height:121px;
+	background:url('../img/lock/background.png'); 
+	/*background-color: #ccc;*/
+	/*padding: 0 -5px -5px 0;*/
+	min-height: 100px;
+	margin:5px;
+	text-align: center;
+	margin: auto;
+}
+.lockedlevel{
+    padding-top: 22px;
+}
+.unlockedlevel{
+	padding-top: 26px;
+}
+/************************************
+Levels page
+************************************/
+.ui-input-text,.ui-mobile label{
+	width:80%;
+	margin:0px 8px;
+}
+[class*=ui-block-]>button.ui-btn{
+	width:90%;
+	margin:0px 8px;	
+}
+/************************************
+background
+************************************/
+.ui-page{ 
+	background:none; 
+}
+div[data-role="page"] div[data-role="main"]{ 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100% !important; 
+	height: 100% !important; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+/*	z-index: -1; */
+} 
+.ui-page{ 
+	background:none; 
+}
+#mainPageLogin div[data-role="main"],
+/*#help div[data-role="main"],*/
+#multiplayer div[data-role="main"]{
+	background: url('../img/Sky-01.jpg') no-repeat center center fixed !important; 
+}
+
+#easyLevel div[data-role="main"]{
+	background: url('../img/Sky-01.jpg') no-repeat center center fixed !important; 
+}
+
+#mediumLevel div[data-role="main"]{
+	background: url('../img/Sky-02.jpg') no-repeat center center fixed !important; 
+}
+
+#hellLevel div[data-role="main"]{
+	background: url('../img/Sky-03.jpg') no-repeat center center fixed !important; 
+}
+
+#winlevel div[data-role="main"]{
+	background: url('../img/WinLose/win.png') no-repeat center center fixed !important; 
+}
+
+#loselevel div[data-role="main"]{
+	background: url('../img/WinLose/lose.png') no-repeat center center fixed !important; 
+}
+
+/************************************
+mainPageLogin
+************************************/
+#coloredwordsimg{
+	position: absolute;
+	left: 0px;
+	top:25%;
+}
+#bluegreen{
+    position: absolute;
+    left: 185px;
+    top: 189px;
+}
+#yellowbaloon{
+    position: absolute;
+    left: 285px;
+    top: 276px;
+}
+/************************************
+mainPageLogin
+************************************/
+.timer{
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	z-index: 10;
+}
+/************************************
+settings
+************************************/
+#settings{
+	background:url('../img/settings/background.png'); 
+}
+.settings-header{
+	margin: 20px 0px;
+}
+.fbname{
+	text-align: center;
+}
+.settings-controllers-music, .settings-controllers-sound{
+	position: relative;
+}
+.settings-controllers-music .offscroll,.settings-controllers-music .onscroll{
+    top: 20px;
+}
+.settings-controllers-sound .offscroll,.settings-controllers-sound .onscroll{
+	top:17px;
+}
+.settings-controllers-music .offscroll,.settings-controllers-sound .offscroll{
+    position: absolute;
+    z-index: 1;
+    left: 109px;
+}
+.settings-controllers-music .onscroll,.settings-controllers-sound .onscroll{
+    position: absolute;
+    z-index: 1;
+    left: 204px;
+}
+/************************************
+gamefield
+************************************/
+#countdown{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 5000;
+	font-size: 150px;
+}
+.countdownfade{
+	font-size: 150px;
+	opacity:0;
+	transition: opacity .5s linear;
+}
+#gameBaloons{
+	text-align: center;
+}
+#gameLetters{
+	height: 104px;
+	padding-top: 16px;
+	text-align: center;
+}
+#gameLetters img{
+	margin: 0px 5px; 
+}
+.inline-div{
+	display: inline;
+}
+.progbardiv{
+	width:50px;
+	height: 297px;
+	position: absolute;
+	z-index: -1;
+	right: 5px;
+	top:20px;
+	overflow:hidden;
+}
+.progbardiv div{
+	width:50px;
+	height: 310px;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+#prog{
+	position: absolute;
+}
+/*#prog2{
+	position: absolute;
+}*/
+#progbg{
+	 width:50px;
+	 position: absolute;
+}
+#foreverwelcome{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	top: 48%;
+	font-size: 50px;
+	display: none;
+	z-index: 10;
+	background-color: rgba(192,192,192,0.5);;
+	text-align: center;
+}
+/************************************
+WinLose :3
+************************************/
+.win-lose-buttons{
+	position: absolute;
+    left: 24px;
+    top: 278px;
+}
+.win-lose-buttons img{
+	padding: 8px;
+}
+.win-stars{
+	position: absolute;
+    left: 33px;
+    top: 22px;
+}
+#winningscore,#loosingscore{
+	position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+}
+#score1,#score3{
+	position: absolute;
+	left: 118px;
+    top: 208px;
+}
+#score2,#score4{
+	position: absolute;
+    left: 185px;
+    top: 244px;
+}
+/************************************
+heplpage
+************************************/
+#helpbg{
+	position: absolute;
+	left:0px;
+	top:0px;
+	right: 0px;
+}
+#helpcanvas{
+	position: absolute;
+    left: 275px;
+    top: 217px;
+}
+#help2canvas{
+	position: absolute;
+    left: 275px;
+    top: 451px;
+}
+.helpcountdown{
+	position: absolute;
+	z-index: 3;
+	left:400px;
+	top:250px;
+}
+#helpnote1{
+	position: absolute;
+	left: 42px;
+	top: 151px;
+}
+#helpnote2{
+	position: absolute;
+	left: 42px;
+	top: 151px;
+}
